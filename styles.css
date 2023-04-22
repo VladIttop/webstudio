@@ -20,7 +20,9 @@ body {
         letter-spacing: 0.03em;
         color: #212121;
         text-decoration: none;
+        
 }
+
 .web {
     color: #2196F3;
 }
@@ -121,11 +123,70 @@ list-style: none;
     font-weight: 700;
         font-size: 36px;
         line-height: 42px;
-        text-align: center;
         letter-spacing: 0.03em;
         color: #212121;
 }
 .img-list {
     width: 370px;
     height: 294px;
+}
+.section {
+background-color: #F5F4FA;
+
+}
+.tile-list {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: 0.03em;
+        color: #212121;
+}
+
+.ul-list{
+    list-style-type: none;
+}
+.img-two{
+    width: 270px;
+    height: 260px;
+}
+.name {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.03em;    
+        color: #212121;
+}
+.job {
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.03em;
+        color: #757575;
+}
+
+.foot-er{
+    background-color: #2F303A;
+    width: 1600px;
+    height: 252px;
+    
+}
+.web-2 {
+    color: #2196F3;
+    font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+        letter-spacing: 0.03em;
+}
+.studio {
+    color: #FFFFFF;
+}
+.footer-list{
+    list-style: none;
+}
+address {
+    color: #FFFFFF;
+}
+.email {
+    color: #FFFFFF99;
+    text-decoration: none;
 }

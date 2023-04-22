@@ -21,3 +21,66 @@ body {
         color: #212121;
         text-decoration: none;
 }
+.web {
+    color: #2196F3;
+}
+.nav-list {
+    list-style: none;
+    font-weight: 500;
+     font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #212121;
+}
+.nav-list a{
+    text-decoration: none;
+    color: #212121;
+}
+
+.nav-list a:hover{
+    color: #2196F3;
+}
+.contact-list {
+    font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+    list-style: none;
+    
+
+}
+.contact-list a{
+color: #757575;
+text-decoration: none;
+}
+
+.contact-list a:hover{
+    color: #2196F3;
+}
+.hero {
+   background-color: #2F303A;
+   
+}
+.hero-title {
+    font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        color: #FFFFFF;
+        text-align: center;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+}
+.hero-btn {
+    
+     width: 152px;
+     height: 30px;
+    font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.06em;
+    background: #2196F3;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        color: #FFFFFF;
+}

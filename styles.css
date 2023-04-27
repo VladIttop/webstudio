@@ -91,9 +91,10 @@ width: 1600px;
 }
 .hero-btn {
     
-     width: 152px;
-     height: 30px;
+     width: 216px;
+     height: 50px;
     font-weight: 700;
+    align-items: center;
         font-size: 16px;
         line-height: 30px;
         text-align: center;
@@ -102,7 +103,7 @@ width: 1600px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
         color: #FFFFFF;
-        align-items: center;
+        
 }
 
 .features {
@@ -147,7 +148,9 @@ list-style: none;
 .section {
 background-color: #F5F4FA;
 
+
 }
+
 .tile-list {
         font-weight: 700;
         font-size: 36px;
@@ -184,13 +187,7 @@ background-color: #F5F4FA;
     height: 252px;
     
 }
-.web-2 {
-    color: #2196F3;
-    font-weight: 700;
-        font-size: 26px;
-        line-height: 31px;
-        letter-spacing: 0.03em;
-}
+
 .studio {
     color: #FFFFFF;
 }

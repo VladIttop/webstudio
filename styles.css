@@ -7,25 +7,15 @@
     height: 1px !important;
     width: 1px !important;
     overflow: hidden;
-}html {
-
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-body {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-
+}    
 body {
     font-family: 'Roboto' , sans-serif;
     font-style: normal;
-    width: 1762px;
 }
+.header-nav{
+    display: flex;
+}
+
 .logo-link {
     font-family: 'Raleway' , sans-serif;
         font-weight: 700;
@@ -34,8 +24,9 @@ body {
         letter-spacing: 0.03em;
         color: #212121;
         text-decoration: none;
-        
+        flex-direction: row;
 }
+
 
 .web {
     color: #2196F3;
@@ -47,10 +38,23 @@ body {
     line-height: 16px;
     letter-spacing: 0.02em;
     color: #212121;
+    display: flex;
+}
+.studia {
+    flex-direction: row;
+    margin: 32px 50px 32px 93px;
+}
+.portfolio {
+    margin: 32px 50px 32px 50px;
+}
+.contacti{
+    flex-direction: row;
+    margin: 32px 344px 32px 50px;
 }
 .nav-list a{
     text-decoration: none;
     color: #212121;
+    flex-direction: row;
 }
 
 .nav-list a:hover{
@@ -61,9 +65,19 @@ body {
         font-size: 14px;
         line-height: 16px;
         letter-spacing: 0.02em;
-    list-style: none;
-    
+    list-style: none;  
+    display: flex;
 
+}
+
+.mail {
+    flex-direction: row-reverse;
+    margin: 32px 50px 32px 250px;
+    
+}
+.tel {
+    flex-direction: row-reverse;
+    margin: 32px 200px 32px 50px;
 }
 .contact-list a{
 color: #757575;

@@ -261,7 +261,7 @@ p {
 .list-title {
     display: flex;
     justify-content: center;
-
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
@@ -311,6 +311,7 @@ p {
 
 .ul-list {
     display: flex;
+    margin: 0 auto;
     justify-content: space-between;
     list-style-type: none;
     text-align: center;
@@ -394,7 +395,10 @@ address {
 
 .section-buttons {
     display: block;
+    margin: 0 auto;
     display: flex;
+    margin-top: 94px;
+    margin-bottom: 50px;
     text-align: center;
     justify-content: space-between;
     align-content: center;
@@ -408,8 +412,75 @@ address {
     background: #F5F4FA;
     border-radius: 4px;
     border-color: #F5F4FA;
-    ;
-    gap: 8px;
+    margin-right: 8px;
+}
+
+.button-1 {
+    width: 130px;
+    height: 38px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    border-color: #F5F4FA;
+}
+
+.button-2 {
+    width: 73px;
+    height: 38px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    border-color: #F5F4FA;
+    margin-right: 8px;
+}
+
+.button-3 {
+    width: 112px;
+    height: 38px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    border-color: #F5F4FA;
+    margin-right: 8px;
+}
+
+.button-3:hover {
+    background: #2196F3;
+    /* shadow-middle */
+    border-radius: 4px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.button-4 {
+    width: 103px;
+    height: 38px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    border-color: #F5F4FA;
+    margin-right: 8px;
+}
+
+.button-4:hover {
+    background: #2196F3;
+    /* shadow-middle */
+    border-radius: 4px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+
+.button-2:hover {
+    background: #2196F3;
+    /* shadow-middle */
+    border-radius: 4px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.button-1:hover {
+    background: #2196F3;
+    /* shadow-middle */
+    border-radius: 4px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 .button:hover {
@@ -419,8 +490,26 @@ address {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
-.cards 
+
+.cards .images {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .cardka {
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    width: 370px;
+    height: 404px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+}
+
+.cardka-1 {
+    margin-bottom: 94px;
     box-sizing: border-box;
     width: 370px;
     height: 404px;
@@ -429,7 +518,7 @@ address {
 }
 
 .imna {
-    margin: 20px 24px 4px  24px;
+    margin: 20px 24px 4px 24px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -443,7 +532,7 @@ address {
 }
 
 .robota {
-    margin: 0px 24px 20px 24px ;
+    margin: 0px 24px 20px 24px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;

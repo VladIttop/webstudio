@@ -38,15 +38,18 @@ ul {
 
 .header {
     width: 1600px;
-
+    height: 80px;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .header-container {
     width: 1200px;
     margin: 0 auto;
+    padding: 25px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .header-left {
@@ -64,6 +67,7 @@ ul {
 }
 
 .logo-link {
+
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -71,6 +75,7 @@ ul {
     letter-spacing: 0.03em;
     color: #212121;
     text-decoration: none;
+
 }
 
 
@@ -91,7 +96,7 @@ ul {
     letter-spacing: 0.02em;
     color: #212121;
 }
-            
+
 
 .nav-list a {
     text-decoration: none;
@@ -142,11 +147,11 @@ ul {
 .hero {
     background-color: #2F303A;
     width: 1600px;
-    height: 600px;
+    padding: 200px 0;
 }
 
 .hero-title {
-    text-align: center;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -293,6 +298,7 @@ p {
 }
 
 .tile-list {
+    padding-top: 94px;
     display: flex;
     justify-content: center;
     margin-top: 94px;
@@ -345,47 +351,70 @@ p {
     color: #757575;
 }
 
-.foot-er {
+/* footer */
+
+.footer-container {
     background-color: #2F303A;
     width: 1600px;
-    height: 252px;
+}
 
+.foot-er {
+    padding: 60px 0 60px 215px;
+}
 
+.logo-link-one {
+    margin-bottom: 20px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
 }
 
 .studio {
     color: #FFFFFF;
+
 }
 
 .web-1 {
     color: #2196F3;
-    padding-top: 24px;
-    margin: 60px 0px 20px 215px;
-}
-
-.footer-list {
-    list-style: none;
 
 }
 
-address {
-    margin: 20px 9px 20px 215px;
-}
 
-address {
+.address-link {
+    margin: 20px 0 9px 0;
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    /* or 171% */
+
+    letter-spacing: 0.03em;
+
     color: #FFFFFF;
 }
 
-.email {
-    margin: 9px 1154px 9px 215px;
-    color: #FFFFFF99;
-    text-decoration: none;
+address {
+    font-style: normal;
 }
 
-.telephone {
-    margin: 9px 1154px 60px 215px;
-    color: #FFFFFF;
-    opacity: 60%;
+.contact-link {
+    display: block;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    /* or 171% */
+
+    letter-spacing: 0.03em;
+}
+
+.contact-link:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .section-buttons {
@@ -402,88 +431,26 @@ address {
 }
 
 .button {
-    width: 125px;
     height: 38px;
     background: #F5F4FA;
     border-radius: 4px;
-    border-color: #F5F4FA;
-    margin-right: 8px;
-}
-
-.button-1 {
-    width: 130px;
-    height: 38px;
-    background: #F5F4FA;
-    border-radius: 4px;
-    border-color: #F5F4FA;
-}
-
-.button-2 {
-    width: 73px;
-    height: 38px;
-    background: #F5F4FA;
-    border-radius: 4px;
-    border-color: #F5F4FA;
-    margin-right: 8px;
-}
-
-.button-3 {
-    width: 112px;
-    height: 38px;
-    background: #F5F4FA;
-    border-radius: 4px;
-    border-color: #F5F4FA;
-    margin-right: 8px;
-}
-
-.button-3:hover {
-    background: #2196F3;
-    /* shadow-middle */
-    border-radius: 4px;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-}
-
-.button-4 {
-    width: 103px;
-    height: 38px;
-    background: #F5F4FA;
-    border-radius: 4px;
-    border-color: #F5F4FA;
-    margin-right: 8px;
-}
-
-.button-4:hover {
-    background: #2196F3;
-    /* shadow-middle */
-    border-radius: 4px;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-}
-
-
-.button-2:hover {
-    background: #2196F3;
-    /* shadow-middle */
-    border-radius: 4px;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-}
-
-.button-1:hover {
-    background: #2196F3;
-    /* shadow-middle */
-    border-radius: 4px;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
+    border: none;
+    padding: 6px 22px 6px 22px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    color: #212121;
 }
 
 .button:hover {
     background: #2196F3;
+    color: #FFFFFF;
     /* shadow-middle */
     border-radius: 4px;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
 }
 
 .cards .images {

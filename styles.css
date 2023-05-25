@@ -145,7 +145,7 @@ ul {
 }
 
 .hero {
-background-image: url(./img/hero.png);
+    background-image: url(./img/hero.png);
     width: 1600px;
     padding: 200px 0;
 }
@@ -160,6 +160,7 @@ background-image: url(./img/hero.png);
     letter-spacing: 0.06em;
     text-transform: uppercase;
     align-items: center;
+    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)) url(img/Img.png);
 }
 
 .hero-btn {
@@ -341,7 +342,7 @@ p {
     border-radius: 0px 0px 4px 4px;
 }
 
-.image {}
+
 
 .img-two {
     width: 270px;

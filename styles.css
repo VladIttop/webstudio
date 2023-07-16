@@ -316,6 +316,36 @@ p {
     color: #212121;
 }
 
+
+.figures {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.team-img {
+    position: relative;
+    width: 370px;
+    height: 294px;
+}
+
+.team-caption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(47, 48, 58, 0.80);
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    width: 370px;
+    padding: 27px 0 27px 0;
+
+
+}
+
 .img-list {
 
     width: 370px;
@@ -415,7 +445,7 @@ p {
 
 .footer-content {
     display: flex;
-    
+
 }
 
 .foot-er {
@@ -647,7 +677,7 @@ address {
 }
 
 .footer-links {
-    padding: 12px 0  0;
+    padding: 12px 0 0;
     /*  */
     width: 206px;
 }

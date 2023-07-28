@@ -25,9 +25,13 @@
               <span class="web">Web</span>Studio</a
             >
             <ul class="nav-list">
-              <a class="nav-list-item-one" href="#">Студія</a>
-              <a class="nav-list-item-two" href="./portfolio.html">Портфоліо</a>
-              <a class="nav-list-item-three" href="#">Контакти</a>
+              <li><a class="nav-list-item-one" href="#">Студія</a></li>
+              <li>
+                <a class="nav-list-item-two" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li><a class="nav-list-item-three" href="#">Контакти</a></li>
             </ul>
           </div>
         </nav>
@@ -57,7 +61,74 @@
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
-          <button class="hero-btn" type="button">Замовити послугу</button>
+          <button class="hero-btn" data-modal-open type="button ">
+            Замовити послугу
+          </button>
+
+          <div class="backdrop is-hidden" data-modal>
+            <form class="modal">
+              <button type="button" class="btn-close" data-modal-close>
+                <svg class="close-svg">
+                  <use href="./img/icons/symbol-defs.svg#icon-close"></use>
+                </svg>
+              </button>
+
+              <h3 class="modal-title">
+                Залиште свої дані, ми вам передзвонимо
+              </h3>
+
+              <ul class="modal-list">
+                <li class="modal-list-item">
+                  <label class="modal-label"
+                    >Ім'я
+                    <input type="text" class="modal-input" required />
+                    <svg class="modal-svg">
+                      <use href="./img/icons/symbol-defs.svg#icon-person"></use>
+                    </svg>
+                  </label>
+                </li>
+                <li class="modal-list-item">
+                  <label class="modal-label"
+                    >Телефон
+                    <input type="tel" class="modal-input" required />
+                    <svg class="modal-svg">
+                      <use
+                        href="./img/icons/symbol-defs.svg#icon-phonetwo"
+                      ></use>
+                    </svg>
+                  </label>
+                </li>
+                <li class="modal-list-item">
+                  <label class="modal-label"
+                    >Пошта
+                    <input type="email" class="modal-input" />
+                    <svg class="modal-svg">
+                      <use href="./img/icons/symbol-defs.svg#icon-email"></use>
+                    </svg>
+                  </label>
+                </li>
+                <li class="modal-list-item">
+                  <label class="modal-label"
+                    >Коментар
+                    <textarea
+                      class="modal-textarea"
+                      cols="30"
+                      rows="10"
+                      placeholder="Введіть текст"
+                    ></textarea>
+                  </label>
+                </li>
+              </ul>
+              <p class="modal-text">
+                <input class="modal-checkbox" type="checkbox" />
+                <span class="ros">Погоджуюся з розсилкою та приймаю</span>
+                <a class="modal-link" href="#">Умови договору</a>
+              </p>
+              <div class="btn-div">
+                <button class="modal-btn" type="submit">Відправити</button>
+              </div>
+            </form>
+          </div>
         </section>
 
         <section class="features container">
@@ -113,7 +184,6 @@
 
         <section class="container">
           <h2 class="list-title">Чим ми займаємося</h2>
-
 
           <div class="figures">
             <figure class="team-img">
@@ -369,6 +439,7 @@
         </section>
       </div>
     </main>
+
     <!-- Footer section -->
     <footer class="footer-container container">
       <div class="footer-content container">
@@ -423,7 +494,28 @@
             </li>
           </ul>
         </section>
+
+        <section class="rozsilka">
+          <form class="footer-form">
+            <label class="footer-label"
+              >Підпишіться на розсилку
+              <input
+                type="email"
+                class="footer-input"
+                required
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="telegram-btn">
+              Підписатися
+              <svg class="tele">
+                <use href="./img/icons/symbol-defs.svg#icon-icon"></use>
+              </svg>
+            </button>
+          </form>
+        </section>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

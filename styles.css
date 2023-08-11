@@ -112,6 +112,52 @@ ul {
     color: #212121;
 }
 
+.nav-list-item {
+    position: relative;
+    width: 48px;
+    height: 4px;
+
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+
+.line {
+    border-radius: 2px;
+    background: #2196F3;
+    background-color: #2196F3;
+    border-radius: 2px;
+}
+
+.nav-list-item:after {
+    content: '';
+    position: absolute;
+    top: 37px;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-bottom: 2px solid #2196F3;
+    background-color: #2196F3;
+    border-radius: 2px;
+}
+
+.nav-list-item:hover::after {
+    display: block;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.nav-list-item:hover {
+    display: block;
+}
+
+.nav-list-item:hover:after {
+    width: 100%;
+    transition: all 0.2s ease;
+}
 
 .nav-list a {
     text-decoration: none;
@@ -732,6 +778,7 @@ address {
 }
 
 .cardka {
+    position: relative;
     margin-bottom: 30px;
     box-sizing: border-box;
     width: 370px;
@@ -961,7 +1008,7 @@ address {
     line-height: 30px;
     letter-spacing: 0.96px;
     cursor: pointer;
-     padding: 0 28px; 
+    padding: 0 28px;
 
 }
 
@@ -970,5 +1017,4 @@ address {
     width: 24px;
     height: 24px;
     fill: #FFF;
-
 }

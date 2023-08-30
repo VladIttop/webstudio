@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -27,7 +32,6 @@
             <ul class="nav-list">
               <li class="nav-li">
                 <a class="nav-list-item" href="./index.html">Студія</a>
-                <div class="line"></div>
               </li>
               <li class="nav-li">
                 <a class="nav-list-item" href="./portfolio.html">Портфоліо</a>
@@ -59,8 +63,8 @@
     <!-- Main section -->
     <main>
       <div class="main-content">
-        <section class="hero container">
-          <h1 class="hero-title">
+        <section data-aos="zoom-in" class="hero container">
+          <h1 class="hero-title animate__animated animate__backInDown">
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
@@ -185,7 +189,7 @@
           </div>
         </section>
 
-        <section class="container">
+        <section data-aos="zoom-in-up" class="container ">
           <h2 class="list-title">Чим ми займаємося</h2>
 
           <div class="figures">
@@ -204,7 +208,8 @@
           </div>
         </section>
 
-        <section class="section">
+        <section class="section" data-aos="fade-up"
+        data-aos-duration="3000">
           <div class="container">
             <h2 class="tile-list">Наша команда</h2>
             <ul class="ul-list">
@@ -520,5 +525,9 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+       AOS.init();
+    </script>
   </body>
 </html>

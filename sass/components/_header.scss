@@ -159,10 +159,12 @@
 
 .mail:hover {
     color: #2196F3;
+    transition: color 250ms ease-out;
 }
 
 .tel:hover {
     color: #2196F3;
+    transition: color 250ms ease-out;
 }
 
 .contact-list a {

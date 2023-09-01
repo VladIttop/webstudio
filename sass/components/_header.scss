@@ -1,0 +1,175 @@
+.header {
+    width: 1600px;
+    height: 80px;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-left {
+    display: flex;
+    width: 520px;
+    justify-content: space-between;
+
+
+}
+
+.header-right {
+    width: 333px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-link {
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: #212121;
+    text-decoration: none;
+
+}
+
+
+.web {
+    color: #2196F3;
+    padding-top: 24px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 281px;
+    list-style: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #212121;
+}
+
+.nav-list-item {
+    position: relative;
+    text-decoration: none;
+    color: #212121;
+}
+
+.nav-list-item:hover {
+    transition: background-color 250ms ease-out;
+    color: #2196F3;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+
+.line {
+    border-radius: 2px;
+    background: #2196F3;
+    background-color: #2196F3;
+    border-radius: 2px;
+}
+
+
+.nav-list-item:after {
+    content: '';
+    position: absolute;
+    top: 44px;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: #2196F3;
+    border-radius: 2px;
+}
+
+.nav-list-item:hover::after {
+    width: 100%;
+    transition: width 250ms ease;
+}
+
+.nav-list-item:hover {
+    display: block;
+}
+
+.nav-list-item:hover:after {
+    width: 100%;
+    transition: all 0.2s ease;
+}
+
+
+.contact-list {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    list-style: none;
+
+}
+
+
+.icon-contact {
+    fill: #757575;
+    margin-right: 10px;
+}
+
+
+
+.mail {
+    display: flex;
+    width: 161px;
+    color: #757575;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+
+}
+
+.mail:hover .icon-contact,
+.mail:focus .icon-contact {
+    fill: #2196F3;
+    transition: all 250ms ease-out;
+}
+
+
+.tel:hover .icon-contact,
+.tel:focus .icon-contact {
+    fill: #2196F3;
+    transition: all 250ms ease-out;
+}
+
+.tel {
+    color: #757575;
+
+}
+
+.mail:hover {
+    color: #2196F3;
+}
+
+.tel:hover {
+    color: #2196F3;
+}
+
+.contact-list a {
+    color: #757575;
+    text-decoration: none;
+}
+
+.contact-list a:hover {
+    color: #2196F3;
+}

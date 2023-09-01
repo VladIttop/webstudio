@@ -1,0 +1,74 @@
+.list-ul {
+    margin: 94px 215px 94px 215px;
+
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-content: center;
+    list-style: none;
+    width: 1200px;
+}
+
+.list-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+
+.figures {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.team-img {
+    position: relative;
+    width: 370px;
+    height: 294px;
+
+}
+
+
+
+.team-caption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(47, 48, 58, 0.80);
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    width: 370px;
+    padding: 27px 0 27px 0;
+
+
+}
+
+.img-list {
+
+    width: 370px;
+    height: 294px;
+}
+
+.img-list-one {
+    margin-right: 30px;
+    width: 370px;
+    height: 294px;
+    margin-left: 215px;
+}
+
+.img-list-two {
+    margin-left: 30px;
+    width: 370px;
+    height: 294px;
+    margin-right: 215px;
+}

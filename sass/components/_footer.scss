@@ -1,0 +1,187 @@
+.footer-container {
+    padding: 60px 0;
+    background-color: #2F303A;
+    width: 1600px;
+}
+
+.footer-content {
+    display: flex;
+}
+
+.foot-er {
+    margin-right: 70px;
+}
+
+.logo-link-one {
+    margin-bottom: 20px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+}
+
+.studio {
+    color: #FFFFFF;
+
+}
+
+.web-1 {
+    color: #2196F3;
+
+}
+
+
+.address-link {
+    margin: 20px 0 9px 0;
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    /* or 171% */
+
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+}
+
+address {
+    font-style: normal;
+}
+
+.contact-link {
+    display: block;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    /* or 171% */
+
+    letter-spacing: 0.03em;
+}
+
+.contact-link:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+
+
+.footer-links {
+    padding: 12px 0 0;
+    /*  */
+    width: 206px;
+    margin-right: 93px;
+}
+
+.footer-title {
+    margin-bottom: 20px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+.footer-list-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links-item {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-links-item:hover {
+    background-color: #2196F3;
+    transition: background-color 0.7s ease-out;
+}
+
+.footer-link {
+    width: 20px;
+    height: 20px;
+    fill: #FFFFFF;
+}
+
+
+.rozsilka {
+    padding-top: 12px;
+    width: 570px;
+}
+
+
+
+.footer-label {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+.footer-input {
+    width: 358px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    background: rgba(33, 150, 243, 0.00);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding-left: 16px;
+    outline: none;
+    cursor: pointer;
+    color: #e2dddd;
+    margin-top: 20px;
+}
+
+.footer-h3 {
+    padding-top: 12px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer-form {
+    display: flex;
+    align-items: flex-end;
+}
+
+.telegram-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+    cursor: pointer;
+    padding: 0 28px;
+
+}
+
+
+.tele {
+    width: 24px;
+    height: 24px;
+    fill: #FFF;
+}

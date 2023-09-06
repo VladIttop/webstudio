@@ -155,7 +155,7 @@ p {
 
 .nav-list-item:hover:after {
   width: 100%;
-  transition: all 0.2s ease;
+  transition: width 0.2s ease;
 }
 
 .contact-list {
@@ -184,13 +184,13 @@ p {
 .mail:hover .icon-contact,
 .mail:focus .icon-contact {
   fill: #2196F3;
-  transition: all 250ms ease-out;
+  transition: fill 250ms ease-out;
 }
 
 .tel:hover .icon-contact,
 .tel:focus .icon-contact {
   fill: #2196F3;
-  transition: all 250ms ease-out;
+  transition: fill 250ms ease-out;
 }
 
 .tel {

@@ -1,99 +1,79 @@
-.section {
-    background-color: #F5F4FA;
-    height: 648px;
-}
+.workers{
+  background-color: #f5f4fa;
+  height: 648px;
 
-.tile-list {
+  &__title {
     padding-top: 94px;
     display: flex;
     justify-content: center;
     margin-top: 94px;
     margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    letter-spacing: 0.03em;
-    color: #212121;
+    @include text(36px, 700, 42px, 0.03em);
+    color: $Colorprimary;
+  }
 }
 
-.ul-list {
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-between;
-    list-style-type: none;
-    text-align: center;
-    width: 1200px;
-}
 
-.card {
+
+.workers-list {
+  margin: 0 auto;
+  @extend %flex;
+  list-style-type: none;
+  text-align: center;
+  width: 1200px;
+
+  &__item {
     width: 270px;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    background: $Colorthird;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     padding-bottom: 30px;
-}
+  }
 
-
-
-.img-two {
-    width: 270px;
-    height: 260px;
-}
-
-.name {
+  &__name {
+    @include text(16px, 500, 19px, 0.03em);
     margin-top: 30px;
     margin-bottom: 10px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.03em;
-    color: #212121;
-}
+    color: $Colorprimary;
+  }
 
-.job {
+  &__job {
+    @include text(16px, 400, 19px, 0.03em);
+    color: $Colorsecondary;
+  }
 
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.03em;
-    color: #757575;
+  //   links
 
-}
-
-.instagram {
-    margin-left: 44px;
-    margin-top: 28px;
-}
-
-
-.links {
-    display: flex;
-    justify-content: space-between;
+  .workers-list-links {
+    @extend %flex;
     width: 206px;
     margin: 16px auto 0;
-    fill: #AFB1B8;
-}
-
-.link {
-    fill: #AFB1B8;
-}
-
-.link-li:hover .link {
-    fill: #FFFFFF;
-}
-
-.link-li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
     cursor: pointer;
+
+    &__item {
+      @extend %flex;
+      justify-content: center;
+      border-radius: 50%;
+      width: 44px;
+      height: 44px;
+
+      &:hover {
+        background-color: $Colorfourth;
+        transition: background-color 0.7s ease-out;
+      }
+
+      &:hover .workers-list-links__svg {
+        fill: $Colorthird;
+      }
+    }
+
+    &__svg {
+      fill: #afb1b8;
+      &:hover {
+        fill: $Colorthird;
+      }
+    }
+  }
 }
 
-.link-li:hover {
-    border-radius: 50%;
-    background-color: #2196F3;
-    transition: background-color 0.7s ease-out;
-
-}

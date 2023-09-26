@@ -20,62 +20,73 @@
     <header class="header container">
       <div class="header-container">
         <nav class="header-nav">
-          <div class="header-left">
-            <a class="logo-link" href="./index.html">
-              <span class="web">Web</span>Studio</a
+          <div class="header-nav-left">
+            <a class="header-nav-left__link" href="./index.html">
+              <span class="header-nav-left-link__web">Web</span>Studio</a
             >
-            <ul class="nav-list">
-              <li class="nav-li">
-                <a class="nav-list-item" href="./index.html">Студія</a>
-                <div class="line"></div>
+            <ul class="header-nav-left-list">
+              <li class="header-nav-left-list__li">
+                <a class="header-nav-left-list__link" href="./index.html"
+                  >Студія</a
+                >
               </li>
-              <li class="nav-li">
-                <a class="nav-list-item" href="./portfolio.html">Портфоліо</a>
+              <li class="header-nav-left-list__li">
+                <a class="header-nav-left-list__link" href="./portfolio.html"
+                  >Портфоліо</a
+                >
               </li>
-              <li class="nav-li">
-                <a class="nav-list-item" href="#">Контакти</a>
+              <li class="header-nav-left-list__li">
+                <a class="header-nav-left-list__link" href="#">Контакти</a>
               </li>
             </ul>
           </div>
         </nav>
 
-        <div class="header-right">
-          <a class="mail" href="mailto:info@devstudio.com ">
-            <svg class="icon-contact" width="16" height="12">
-              <use href="./img/icons/symbol-defs.svg#icon-envelope"></use>
-            </svg>
-            info@devstudio.com</a
-          >
-
-          <a class="tel" href="tel:+380961111111">
-            <svg class="icon-contact" width="10" height="16">
-              <use href="./img/icons/symbol-defs.svg#icon-phone"></use>
-            </svg>
-            +38 096 111 11 11</a
-          >
+        <div class="header-nav-right">
+          <ul class="header-nav-right-list">
+            <li class="header-nav-right-list__item">
+              <a
+                class="header-nav-right-list__link"
+                href="mailto:info@devstudio.com "
+              >
+                <svg class="header-nav-right-list__icon" width="16" height="12">
+                  <use href="./img/icons/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="header-nav-right-list__item">
+              <a class="header-nav-right-list__link" href="tel:+380961111111">
+                <svg class="header-nav-right-list__icon" width="10" height="16">
+                  <use href="./img/icons/symbol-defs.svg#icon-phone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
     </header>
     <main>
       <div class="main-content">
-        <section class="section-buttons">
-          <button type="button" class="button">Усі</button>
+        <section class="buttons-section">
+          <button type="button" class="buttons-section__button">Усі</button>
 
-          <button type="button" class="button">Веб-сайти</button>
+          <button type="button" class="buttons-section__button">Веб-сайти</button>
 
-          <button type="button" class="button">Додатки</button>
+          <button type="button" class="buttons-section__button">Додатки</button>
 
-          <button type="button" class="button">Дизайн</button>
+          <button type="button" class="buttons-section__button">Дизайн</button>
 
-          <button type="button" class="button">Маркетинг</button>
+          <button type="button" class="buttons-section__button">Маркетинг</button>
         </section>
 
-        <div class="cards">
-          <ul class="images container">
-            <li class="cardka">
-              <div class="img-container">
+        <div class="cards-section">
+          <ul class="cards-list container">
+            <li class="cards-list__item">
+              <div class="cards-img__container">
                 <img
-                  class="img-porrtfolio"
+                  class="cards-list__img"
                   src="./img/tehnorak.jpg"
                   alt="tecnorak"
                 />
@@ -87,15 +98,19 @@
                   </p>
                 </div>
               </div>
-              <div class="main-text-card">
-                <p class="imna">Технокряк</p>
-                <p class="robota">Веб-сайт</p>
+              <div class="cards-list__description">
+                <p class="cards-list__name">Технокряк</p>
+                <p class="cards-list__job">Веб-сайт</p>
               </div>
             </li>
-            <li class="cardka">
-              <div class="img-container">
+
+
+
+
+            <li class="cards-list__item">
+              <div class="cards-img__container">
                 <img
-                  class="img-porrtfolio"
+                  class="cards-list__img"
                   src="./img/poster.jpg"
                   alt="tecnorak"
                 />
@@ -109,15 +124,18 @@
                 </div>
               </div>
 
-              <div class="main-text-card">
-                <p class="imna">Постер New Orlean vs Golden</p>
-                <p class="robota">Дизайн</p>
+              <div class="cards-list__description">
+                <p class="cards-list__name">Постер New Orlean vs Golden</p>
+                <p class="cards-list__job">Дизайн</p>
               </div>
             </li>
-            <li class="cardka">
-              <div class="img-container">
+
+
+
+            <li class="cards-list__item">
+              <div class="cards-img__container">
                 <img
-                  class="img-porrtfolio"
+                  class="cards-list__img"
                   src="./img/restoran.jpg"
                   alt="tecnorak"
                 />
@@ -130,15 +148,17 @@
                 </div>
               </div>
 
-              <div class="main-text-card">
-                <p class="imna">Ресторан Seafood</p>
-                <p class="robota">Додаток</p>
+              <div class="cards-list__description">
+                <p class="cards-list__name">Ресторан Seafood</p>
+                <p class="cards-list__job">Додаток</p>
               </div>
             </li>
-            <li class="cardka">
-              <div class="img-container">
+
+
+            <li class="cards-list__item">
+              <div class="cards-img__container">
                 <img
-                  class="img-porrtfolio"
+                  class="cards-list__img"
                   src="./img/prime.jpg"
                   alt="tecnorak"
                 />
@@ -150,15 +170,16 @@
                   </p>
                 </div>
               </div>
-              <div class="main-text-card">
-                <p class="imna">Проєкт Prime</p>
-                <p class="robota">Маркетинг</p>
+              <div class="cards-list__description">
+                <p class="cards-list__name">Проєкт Prime</p>
+                <p class="cards-list__job">Маркетинг</p>
               </div>
             </li>
-            <li class="cardka">
-              <div class="img-container">
+            <!-- //////////////////// -->
+            <li class="cards-list__item">
+              <div class="cards-img__container">
                 <img
-                  class="img-porrtfolio"
+                  class="cards-list__img"
                   src="./img/boxes.jpg"
                   alt="tecnorak"
                 />
@@ -170,15 +191,16 @@
                   </p>
                 </div>
               </div>
-              <div class="main-text-card">
-                <p class="imna">Проєкт Boxes</p>
-                <p class="robota">Додаток</p>
+              <div class="cards-list__description">
+                <p class="cards-list__name">Проєкт Boxes</p>
+                <p class="cards-list__job">Додаток</p>
               </div>
             </li>
-            <li class="cardka">
-              <div class="img-container">
+            <!-- //////////////// -->
+            <li class="cards-list__item">
+              <div class="cards-img__container">
                 <img
-                  class="img-porrtfolio"
+                  class="cards-list__img"
                   src="./img/inspiration.jpg"
                   alt="tecnorak"
                 />
@@ -190,15 +212,15 @@
                   </p>
                 </div>
               </div>
-              <div class="main-text-card">
-                <p class="imna">Inspiration has no Borders</p>
-                <p class="robota">Веб-сайт</p>
+              <div class="cards-list__description">
+                <p class="cards-list__name">Inspiration has no Borders</p>
+                <p class="cards-list__job">Веб-сайт</p>
               </div>
             </li>
-            <li class="cardka">
-              <div class="img-container">
+            <li class="cards-list__item">
+              <div class="cards-img__container">
                 <img
-                  class="img-porrtfolio"
+                  class="cards-list__img"
                   src="./img/limited.jpg"
                   alt="tecnorak"
                 />
@@ -210,15 +232,15 @@
                   </p>
                 </div>
               </div>
-              <div class="main-text-card">
-                <p class="imna">Видання Limited Edition</p>
-                <p class="robota">Дизайн</p>
+              <div class="cards-list__description">
+                <p class="cards-list__name">Видання Limited Edition</p>
+                <p class="cards-list__job">Дизайн</p>
               </div>
             </li>
-            <li class="cardka">
-              <div class="img-container">
+            <li class="cards-list__item">
+              <div class="cards-img__container">
                 <img
-                  class="img-porrtfolio"
+                  class="cards-list__img"
                   src="./img/Lab.jpg"
                   alt="tecnorak"
                 />
@@ -230,15 +252,15 @@
                   </p>
                 </div>
               </div>
-              <div class="main-text-card">
-                <p class="imna">Проєкт LAB</p>
-                <p class="robota">Маркетинг</p>
+              <div class="cards-list__description">
+                <p class="cards-list__name">Проєкт LAB</p>
+                <p class="cards-list__job">Маркетинг</p>
               </div>
             </li>
-            <li class="cardka">
-              <div class="img-container">
+            <li class="cards-list__item">
+              <div class="cards-img__container">
                 <img
-                  class="img-porrtfolio"
+                  class="cards-list__img"
                   src="./img/business.jpg"
                   alt="tecnorak"
                 />
@@ -250,9 +272,9 @@
                   </p>
                 </div>
               </div>
-              <div class="main-text-card">
-                <p class="imna">Growing Business</p>
-                <p class="robota">Додаток</p>
+              <div class="cards-list__description">
+                <p class="cards-list__name">Growing Business</p>
+                <p class="cards-list__job">Додаток</p>
               </div>
             </li>
           </ul>
@@ -262,51 +284,51 @@
 
     <footer class="footer-container container">
       <div class="footer-content container">
-        <section class="foot-er">
+        <section class="footer-section">
           <h2 class="visually-hidden">unfjlcm</h2>
-          <a class="logo-link-one" href="./index.html">
-            <span class="web-1">Web</span><span class="studio">Studio</span></a
+          <a class="footer-section__link" href="./index.html">
+            <span class="footer-section__web">Web</span><span class="studio">Studio</span></a
           >
 
-          <address>
-            <a class="address-link" href="#">м. Київ, пр-т Лесі Українки, 26</a>
-            <a class="contact-link" href="mailto:info@devstudio.com"
+          <address class="address">
+            <a class="address__link" href="#">м. Київ, пр-т Лесі Українки, 26</a>
+            <a class="address__email" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
 
-            <a class="contact-link" href="tel:+380961111111"
+            <a class="address__email" href="tel:+380961111111"
               >+38 096 111 11 11</a
             >
           </address>
         </section>
 
-        <section class="footer-links">
-          <h3 class="footer-title">приєднуйтесь</h3>
-          <ul class="footer-list-links">
-            <li class="footer-links-item">
+        <section class="socials-section">
+          <h3 class="socials-section__title">приєднуйтесь</h3>
+          <ul class="socials-list">
+            <li class="socials-list__item">
               <a href="#">
-                <svg class="footer-link">
+                <svg class="social-list-item__svg">
                   <use href="./img/icons/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-links-item">
+            <li class="socials-list__item">
               <a href="#">
-                <svg class="footer-link">
+                <svg class="social-list-item__svg">
                   <use href="./img/icons/symbol-defs.svg#icon-twiter"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-links-item">
+            <li class="socials-list__item">
               <a href="#">
-                <svg class="footer-link">
+                <svg class="social-list-item__svg">
                   <use href="./img/icons/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-links-item">
+            <li class="socials-list__item">
               <a href="#">
-                <svg class="footer-link">
+                <svg class="social-list-item__svg">
                   <use href="./img/icons/symbol-defs.svg#icon-in"></use>
                 </svg>
               </a>
@@ -314,20 +336,20 @@
           </ul>
         </section>
 
-        <section class="rozsilka">
-          <form class="footer-form">
-            <label class="footer-label"
+        <section class="section-telegram">
+          <form class="section-form">
+            <label class="section-form__label"
               >Підпишіться на розсилку
               <input
                 type="email"
-                class="footer-input"
+                class="section-form__input"
                 required
                 placeholder="E-mail"
               />
             </label>
-            <button type="submit" class="telegram-btn">
+            <button type="submit" class="section-form__button">
               Підписатися
-              <svg class="tele">
+              <svg class="telegram-icon">
                 <use href="./img/icons/symbol-defs.svg#icon-icon"></use>
               </svg>
             </button>

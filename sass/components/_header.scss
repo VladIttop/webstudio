@@ -1,177 +1,112 @@
 .header {
-    width: 1600px;
-    height: 80px;
-    border-bottom: 1px solid #ECECEC;
+  width: 1600px;
+  height: 80px;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 25px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+  width: 1200px;
+  margin: 0 auto;
+  padding: 25px 0;
+  @extend %flex;
 }
 
-.header-left {
-    display: flex;
+.header-nav {
+  .header-nav-left {
+    @extend %flex;
     width: 520px;
-    justify-content: space-between;
 
 
-}
+    &__link {
+      @include text (26px, 700, 31px, 0.03em);
+      font-family: $Fontsecondary;
+      color: $Colorprimary;
+      text-decoration: none;
 
-.header-right {
-    width: 333px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+      .header-nav-left-link__web {
+        color: $Colorfourth;
+        padding-top: 24px;
+      }
+    }
+  }
 
-.logo-link {
-
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-    color: #212121;
-    text-decoration: none;
-
-}
-
-
-.web {
-    color: #2196F3;
-    padding-top: 24px;
-}
-
-.nav-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .header-nav-left-list {
+    @extend %flex;
     width: 281px;
     list-style: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: #212121;
+    @include text(14px, 500, 16px, 0.02em);
+    color: $Colorprimary;
+
+    .header-nav-left-list__li {
+
+      
+      .header-nav-left-list__link {
+        position: relative;
+        text-decoration: none;
+        color: $Colorprimary;
+
+        &:hover {
+          transition: color 250ms ease-out;
+          color: $Colorfourth;
+        }
+
+        .header-nav-left-list__link:after {
+          content: "";
+          position: absolute;
+          top: 44px;
+          left: 0;
+          width: 0;
+          height: 4px;
+          background-color: $Colorfourth;
+          border-radius: 2px;
+        }
+
+        .header-nav-left-list__link:hover:after {
+          width: 100%;
+          transition: width 250ms ease;
+        }
+
+        .header-nav-left-list__link:hover {
+          display: block;
+        }
+
+        .header-nav-left-list__link:hover:hover {
+          width: 100%;
+          transition: width 0.2s ease;
+        }
+      }
+
+
+    }
+  }
+
+    
 }
 
-.nav-list-item {
-    position: relative;
-    text-decoration: none;
-    color: #212121;
-}
+.header-nav-right-list {
+  @extend %flex;
+  width: 333px;
 
-.nav-list-item:hover {
-    transition: background-color 250ms ease-out;
-    color: #2196F3;
-}
+  &__link {
+    color: $Colorsecondary;
+    @include text(14px, 500, normal, 0.28px);
+    
+    &:hover {
+      color: $Colorfourth;
+      transition: color 250ms ease-out;
+    }
 
-.header-left {
-    display: flex;
-    align-items: center;
-}
+    &:hover .header-nav-right-list__icon,
+    &:focus .header-nav-right-list__icon {
+      fill: $Colorfourth;
+      transition: fill 250ms ease-out;
+    }
 
+  }
 
-.line {
-    border-radius: 2px;
-    background: #2196F3;
-    background-color: #2196F3;
-    border-radius: 2px;
-}
-
-
-.nav-list-item:after {
-    content: '';
-    position: absolute;
-    top: 44px;
-    left: 0;
-    width: 0;
-    height: 4px;
-    background-color: #2196F3;
-    border-radius: 2px;
-}
-
-.nav-list-item:hover::after {
-    width: 100%;
-    transition: width 250ms ease;
-}
-
-.nav-list-item:hover {
-    display: block;
-}
-
-.nav-list-item:hover:after {
-    width: 100%;
-    transition: width 0.2s ease;
-}
-
-
-.contact-list {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    list-style: none;
-
-}
-
-
-.icon-contact {
-    fill: #757575;
+  &__icon {
+    fill: $Colorsecondary;
     margin-right: 10px;
+  }
 }
 
-
-
-.mail {
-    display: flex;
-    width: 161px;
-    color: #757575;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    letter-spacing: 0.28px;
-
-}
-
-.mail:hover .icon-contact,
-.mail:focus .icon-contact {
-    fill: #2196F3;
-    transition: fill 250ms ease-out;
-}
-
-
-.tel:hover .icon-contact,
-.tel:focus .icon-contact {
-    fill: #2196F3;
-    transition: fill 250ms ease-out;
-}
-
-.tel {
-    color: #757575;
-
-}
-
-.mail:hover {
-    color: #2196F3;
-    transition: color 250ms ease-out;
-}
-
-.tel:hover {
-    color: #2196F3;
-    transition: color 250ms ease-out;
-}
-
-.contact-list a {
-    color: #757575;
-    text-decoration: none;
-}
-
-.contact-list a:hover {
-    color: #2196F3;
-}

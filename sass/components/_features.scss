@@ -1,55 +1,39 @@
 .features {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 94px 0px;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 94px 0px;
 }
-
 
 .features-list {
-    display: flex;
-    justify-content: space-between;
-    letter-spacing: 0.3em;
+  @extend %flex;
+  flex-wrap: nowrap;
+  letter-spacing: 0.3em;
 
-}
-
-.vectors {
+  &__vector {
     margin-bottom: 30px;
     width: 270px;
     height: 120px;
-    background: #F5F4FA;
+    background: #f5f4fa;
     border-radius: 4px;
-}
+  }
 
-.vector {
+  &__img {
     margin: 25px 102px 25px 102px;
+  }
 
-}
-
-.features-list-item {
-    width: 270px;
-}
-
-.features-subtitle {
-    font-family: 'Roboto';
+  &__title {
+    @include text(14px, 700, 16px, 0.03em);
+    font-family: $Fontprimary;
     font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
-    color: #212121;
-}
-
-.futures-paragraph {
-    font-family: 'Roboto';
+    color: $Colorprimary;
+  }
+  &__paragraph {
+    @include text(14px, 400, 24px, 0.03em);
+    font-family: $Fontprimary;
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    /* or 171% */
-
-    letter-spacing: 0.03em;
-
-    color: #757575;
+    color: $Colorsecondary;
+    width: 270px;
+  }
 }

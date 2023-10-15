@@ -68,3 +68,16 @@
     color: $Colorsecondary;
   }
 }
+
+@media (max-width: 768px) {
+  .cards-list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 768px;
+    padding: 0 15px 0 15px;
+  }
+
+  .cards-list__item {
+    max-width: 354px;
+  }
+}

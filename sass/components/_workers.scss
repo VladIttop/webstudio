@@ -1,26 +1,22 @@
-.workers{
+.workers {
   background-color: #f5f4fa;
   height: 648px;
+  padding: 94px 0;
 
-  &__title {
-    padding-top: 94px;
-    display: flex;
-    justify-content: center;
-    margin-top: 94px;
+  .workers__title {
+    text-align: center;
     margin-bottom: 50px;
     @include text(36px, 700, 42px, 0.03em);
     color: $Colorprimary;
   }
 }
 
-
-
 .workers-list {
   margin: 0 auto;
   @extend %flex;
   list-style-type: none;
   text-align: center;
-  width: 1200px;
+
 
   &__item {
     width: 270px;
@@ -77,3 +73,33 @@
   }
 }
 
+// @media (max-width: 768px) {
+//   .workers {
+//     height: 1285px;
+//     max-width: 768px;
+//     padding: 60px 15px 0 15px;
+//   }
+
+//   .workers-title {
+
+//     letter-spacing: 0.84px;
+//     font-size: 28px;
+//     margin-bottom: 30px;
+//   }
+
+//   .workers-list {
+//     max-width: 768px;
+//     display: flex;
+//     flex-wrap: wrap;
+//     gap: 30px;
+
+//     &__item {
+//       width: 354px;
+//     }
+//   }
+
+//   .workers-item__image {
+//     width: 354px;
+//     height: 374px;
+//   }
+// }

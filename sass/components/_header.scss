@@ -4,6 +4,48 @@
   border-bottom: 1px solid #ececec;
 }
 
+@media (max-width: 768px) {
+  .header {
+    max-width: 768px;
+
+    .header-nav-left-link__web {
+      margin-top: 5px;
+    }
+    .header-container {
+      max-width: 768px;
+      padding: 21px 15px;
+    }
+
+    .header-nav-left {
+      max-width: 504px;
+    }
+
+    &__link {
+      font-size: 24px;
+    }
+
+    .header-nav-left-list {
+      max-width: 283px;
+    }
+
+    .header-nav-right-list {
+      gap: 10px;
+      max-width: 138px;
+      flex-direction: column;
+
+      &__link {
+        display: flex;
+        font-size: 12px;
+        letter-spacing: 0.24px;
+      }
+
+      &__icon {
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
 .header-container {
   width: 1200px;
   margin: 0 auto;
@@ -16,9 +58,8 @@
     @extend %flex;
     width: 520px;
 
-
     &__link {
-      @include text (26px, 700, 31px, 0.03em);
+      @include text(26px, 700, 31px, 0.03em);
       font-family: $Fontsecondary;
       color: $Colorprimary;
       text-decoration: none;
@@ -38,8 +79,6 @@
     color: $Colorprimary;
 
     .header-nav-left-list__li {
-
-      
       .header-nav-left-list__link {
         position: relative;
         text-decoration: none;
@@ -75,12 +114,8 @@
           transition: width 0.2s ease;
         }
       }
-
-
     }
   }
-
-    
 }
 
 .header-nav-right-list {
@@ -90,7 +125,7 @@
   &__link {
     color: $Colorsecondary;
     @include text(14px, 500, normal, 0.28px);
-    
+
     &:hover {
       color: $Colorfourth;
       transition: color 250ms ease-out;
@@ -101,7 +136,6 @@
       fill: $Colorfourth;
       transition: fill 250ms ease-out;
     }
-
   }
 
   &__icon {
@@ -109,4 +143,3 @@
     margin-right: 10px;
   }
 }
-

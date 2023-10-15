@@ -6,6 +6,15 @@
   color: $Colorprimary;
 }
 
+@media (max-width: 768px) {
+
+  .work {
+    padding: 0;
+    margin: 0;
+    display: none
+  }
+}
+
 .figures {
   @extend %flex;
   margin: 0 auto;

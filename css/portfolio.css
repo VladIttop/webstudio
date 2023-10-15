@@ -67,6 +67,40 @@ p {
   border-bottom: 1px solid #ececec;
 }
 
+@media (max-width: 768px) {
+  .header {
+    max-width: 768px;
+  }
+  .header .header-nav-left-link__web {
+    margin-top: 5px;
+  }
+  .header .header-container {
+    max-width: 768px;
+    padding: 21px 15px;
+  }
+  .header .header-nav-left {
+    max-width: 504px;
+  }
+  .header__link {
+    font-size: 24px;
+  }
+  .header .header-nav-left-list {
+    max-width: 283px;
+  }
+  .header .header-nav-right-list {
+    gap: 10px;
+    max-width: 138px;
+    flex-direction: column;
+  }
+  .header .header-nav-right-list__link {
+    display: flex;
+    font-size: 12px;
+    letter-spacing: 0.24px;
+  }
+  .header .header-nav-right-list__icon {
+    margin-right: 8px;
+  }
+}
 .header-container {
   width: 1200px;
   margin: 0 auto;
@@ -77,11 +111,12 @@ p {
   width: 520px;
 }
 .header-nav .header-nav-left__link {
-  @incl font-family: $Fontsecondary;
-  font-weight: 700;
   font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
   line-height: 31px;
   letter-spacing: 0.03em;
+  font-family: "Raleway", sans-serif;
   color: #212121;
   text-decoration: none;
 }
@@ -92,8 +127,9 @@ p {
 .header-nav .header-nav-left-list {
   width: 281px;
   list-style: none;
-  font-weight: 500;
   font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #212121;
@@ -137,6 +173,7 @@ p {
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
+  line-height: normal;
   letter-spacing: 0.28px;
 }
 .header-nav-right-list__link:hover {
@@ -164,6 +201,11 @@ p {
   width: 575px;
 }
 .buttons-section .buttons-section__button {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.03em;
   height: 38px;
   background: #F5F4FA;
   border-radius: 4px;
@@ -171,10 +213,6 @@ p {
   padding: 6px 22px 6px 22px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 0.03em;
   color: #212121;
   cursor: pointer;
 }
@@ -226,11 +264,12 @@ p {
   padding: 63px 24px;
 }
 .cards-list .overlay-text {
-  color: #ffffff;
   font-size: 18px;
+  font-style: normal;
   font-weight: 400;
   line-height: 1.55;
   letter-spacing: 0.54px;
+  color: #ffffff;
 }
 .cards-list .cards-list__item:hover .overlay {
   transform: translateX(0);
@@ -241,26 +280,39 @@ p {
   height: 70px;
 }
 .cards-list .cards-list__name {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.06em;
   margin: 20px 24px 4px 24px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 36px;
-  letter-spacing: 0.06em;
   color: #212121;
 }
 .cards-list .cards-list__job {
   margin: 0px 24px 20px 24px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: 400;
   font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 30px;
   letter-spacing: 0.03em;
   color: #757575;
 }
 
+@media (max-width: 768px) {
+  .cards-list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 768px;
+    padding: 0 15px 0 15px;
+  }
+  .cards-list__item {
+    max-width: 354px;
+  }
+}
 .footer-container {
   padding: 60px 0;
   background-color: #2f303a;
@@ -275,14 +327,14 @@ p {
   margin-right: 70px;
 }
 .footer-section__link {
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0.03em;
   margin-bottom: 20px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 31px;
-  /* identical to box height */
-  letter-spacing: 0.03em;
 }
 
 .studio {
@@ -294,22 +346,22 @@ p {
 }
 
 .address__link {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   margin: 20px 0 9px 0;
   display: block;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  /* or 171% */
-  letter-spacing: 0.03em;
   color: #ffffff;
 }
 .address__email {
   display: block;
   color: rgba(255, 255, 255, 0.6);
-  font-weight: 400;
   font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 1.71;
-  /* or 171% */
   letter-spacing: 0.03em;
 }
 
@@ -323,17 +375,18 @@ address {
 
 .socials-section {
   padding: 12px 0 0;
-  /*  */
   width: 206px;
   margin-right: 93px;
 }
 
 .socials-section__title {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
   margin-bottom: 20px;
   color: #ffffff;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.42px;
   text-transform: uppercase;
 }
 
@@ -364,11 +417,12 @@ address {
   align-items: flex-end;
 }
 .section-form__label {
-  color: #ffffff;
   font-size: 14px;
+  font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.42px;
+  color: #ffffff;
   text-transform: uppercase;
 }
 .section-form__input {
@@ -396,6 +450,7 @@ address {
   color: #ffffff;
   text-align: center;
   font-size: 16px;
+  font-style: normal;
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.96px;

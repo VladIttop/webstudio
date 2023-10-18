@@ -6,8 +6,17 @@
 
 .features-list {
   @extend %flex;
-  margin: 0 auto;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 30px;
   letter-spacing: 0.3em;
+
+  @media (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
 
   &__vector {
     margin-bottom: 30px;
@@ -19,6 +28,9 @@
 
   &__img {
     padding: 25px 100px;
+    @media (max-width: 480px) {
+      max-width: 100%;
+    }
   }
 
   &__title {
@@ -28,6 +40,11 @@
     text-transform: uppercase;
     margin-bottom: 10px;
     color: $Colorprimary;
+
+    @media (max-width: 480px) {
+      text-align: center;
+      max-width: 450px;
+    }
   }
   &__paragraph {
     @include text(14px, 400, 24px, 0.03em);
@@ -35,6 +52,10 @@
     font-style: normal;
     color: $Colorsecondary;
     width: 270px;
+
+    @media (max-width: 480px) {
+      max-width: 450px;
+    }
   }
 }
 
@@ -73,5 +94,23 @@
 
   .features-list-item {
     max-width: 354px;
+  }
+}
+
+@media (max-width: 480px) {
+  .features {
+    max-width: 480px;
+  }
+
+.features-list {
+  align-items: flex-start;
+}
+
+.features-list__img {
+  padding: 25px 190px;
+}
+
+  .features-list__vector {
+    width: 450px;
   }
 }

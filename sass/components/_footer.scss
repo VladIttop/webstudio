@@ -1,11 +1,15 @@
-.footer-container {
+.footer {
   padding: 60px 0;
   background-color: #2f303a;
-  width: 1600px;
+  width: 100%;
 }
 
-.footer-content {
+
+
+.footer .container {
   display: flex;
+
+
 }
 
 .footer-section {
@@ -13,7 +17,6 @@
 
   &__link {
     @include text(26px, 700, 31px, 0.03em);
-    margin-bottom: 20px;
     font-family: $Fontsecondary;
     font-style: normal;
   }
@@ -42,9 +45,6 @@
   }
 }
 
-address {
-  font-style: normal;
-}
 
 .contact-link:not(:last-child) {
   margin-bottom: 9px;
@@ -65,6 +65,7 @@ address {
 
 .socials-list {
   @extend %flex;
+  
 
   &__item {
     width: 44px;
@@ -78,9 +79,6 @@ address {
       background-color: $Colorfourth;
       transition: background-color 0.7s ease-out;
     }
-
-
-
   }
 
   &__svg {
@@ -99,7 +97,10 @@ address {
   display: flex;
   align-items: flex-end;
 
+
+
   &__label {
+    display: block;
     @include text(14px, 700, normal, 0.42px);
     color: $Colorthird;
     text-transform: uppercase;
@@ -117,6 +118,11 @@ address {
     cursor: pointer;
     color: #e2dddd;
     margin-top: 20px;
+
+    @media (max-width:768px) {
+      display: block;
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -140,4 +146,54 @@ address {
     height: 24px;
     fill: $Colorthird;
   }
+}
+
+@media (max-width: 768px) {
+  .footer .container {
+    display: flex;
+    max-width: 768px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 60px;
+  }
+  .footer-section__link {
+    text-align: center;
+  }
+  .address {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.socials-section {
+  margin-right: 0;
+}
+
+  .socials-section__title {
+    text-align: center;
+  }
+  .section-form__label {
+    display: block;
+    text-align: center;
+  }
+
+  .section-telegram {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+
+
+  .section-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin-right: 0;
+  }
+
+
 }

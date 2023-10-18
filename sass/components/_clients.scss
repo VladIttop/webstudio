@@ -61,3 +61,14 @@
     }
   }
 }
+
+@media (max-width:480px) {
+  .clients-list {
+    max-width: 450px;
+    flex-wrap: wrap;
+  }
+
+  .clients-list__item {
+    max-width: 210px;
+  }
+}

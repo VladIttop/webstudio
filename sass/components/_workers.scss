@@ -1,6 +1,6 @@
 .workers {
   background-color: #f5f4fa;
-  height: 648px;
+  width: 100%;
   padding: 94px 0;
 
   .workers__title {
@@ -16,7 +16,6 @@
   @extend %flex;
   list-style-type: none;
   text-align: center;
-
 
   &__item {
     width: 270px;
@@ -73,33 +72,55 @@
   }
 }
 
-// @media (max-width: 768px) {
-//   .workers {
-//     height: 1285px;
-//     max-width: 768px;
-//     padding: 60px 15px 0 15px;
-//   }
+@media (max-width: 768px) {
+  .workers {
+    max-width: 768px;
+    padding: 60px 15px;
+  }
 
-//   .workers-title {
+  .workers-title {
+    letter-spacing: 0.84px;
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
 
-//     letter-spacing: 0.84px;
-//     font-size: 28px;
-//     margin-bottom: 30px;
-//   }
+  .workers-list {
+    max-width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 
-//   .workers-list {
-//     max-width: 768px;
-//     display: flex;
-//     flex-wrap: wrap;
-//     gap: 30px;
+    &__item {
+      width: 354px;
+    }
+  }
 
-//     &__item {
-//       width: 354px;
-//     }
-//   }
+  .workers-item__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
 
-//   .workers-item__image {
-//     width: 354px;
-//     height: 374px;
-//   }
-// }
+  .thumba {
+    width: 354px;
+    height: 374px;
+  }
+}
+
+@media (max-width: 480px) {
+  .workers-list__item {
+    width: 100%;
+  }
+
+  .thumba {
+    width: 450px;
+    height: 460px;
+  }
+
+  .workers-item__image {
+    width: 100%;
+    height: 100%;
+  }
+}

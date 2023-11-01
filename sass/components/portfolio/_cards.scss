@@ -2,6 +2,8 @@
   width: 1200px;
   @extend %flex;
 
+  
+
   .cards-img__container {
     position: relative;
     width: 370px;
@@ -17,6 +19,10 @@
     height: 404px;
     background: $Colorthird;
     border: 1px solid #eeeeee;
+
+    @media (max-width:480px) {
+      width: 450px;
+    }
   }
   .cards-list__img {
     width: 100%;
@@ -81,3 +87,9 @@
     max-width: 354px;
   }
 }
+
+@media (max-width:480px) {
+.cards-list {
+  width: 480px;
+
+}}

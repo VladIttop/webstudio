@@ -220,6 +220,7 @@ p {
 }
 .header-nav .menu-phone {
   display: none;
+  border: none;
 }
 @media (max-width: 480px) {
   .header-nav .menu-phone {
@@ -501,6 +502,13 @@ p {
   position: absolute;
   top: 10px;
   right: 15px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button-close {

@@ -91,6 +91,12 @@
 .section-telegram {
   padding-top: 12px;
   width: 570px;
+
+  @media (max-width:480px) {
+    width: 450px;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .section-form {

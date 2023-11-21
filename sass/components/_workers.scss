@@ -1,21 +1,39 @@
 .workers {
   background-color: #f5f4fa;
-  width: 100%;
   padding: 94px 0;
 
-  .workers__title {
+  @media (max-width: 1199px) {
+    padding: 60px 0;
+  }
+
+  &__title {
     text-align: center;
     margin-bottom: 50px;
-    @include text(36px, 700, 42px, 0.03em);
+    @include text(36px, 700, normal, 1.08px);
     color: $Colorprimary;
+
+    @media (max-width: 1199px) {
+      margin-bottom: 30px;
+      font-size: 28px;
+      line-height: 0.84px;
+    }
   }
 }
 
 .workers-list {
-  margin: 0 auto;
   @extend %flex;
-  list-style-type: none;
-  text-align: center;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  gap: 30px;
+
+  @media (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 
   &__item {
     width: 270px;
@@ -23,104 +41,83 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    padding-bottom: 30px;
+
+    @media (max-width: 1199px) {
+      width: 354px;
+    }
+
+    @media (max-width: 767px) {
+      width: 450px;
+    }
+  }
+
+  .thumba {
+    width: 270px;
+    height: 260px;
+
+    @media (max-width: 1199px) {
+      width: 354px;
+      height: 374px;
+    }
+
+    @media (max-width: 767px) {
+      width: 450px;
+      height: 460px;
+    }
+
+    .workers-item__image {
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      height: 100%;
+    }
   }
 
   &__name {
-    @include text(16px, 500, 19px, 0.03em);
+    text-align: center;
+    @include text(16px, 500, normal, 0.48px);
     margin-top: 30px;
     margin-bottom: 10px;
     color: $Colorprimary;
   }
 
   &__job {
-    @include text(16px, 400, 19px, 0.03em);
-    color: $Colorsecondary;
-  }
-
-  //   links
-
-  .workers-list-links {
-    @extend %flex;
-    width: 206px;
-    margin: 16px auto 0;
-    cursor: pointer;
-
-    &__item {
-      @extend %flex;
-      justify-content: center;
-      border-radius: 50%;
-      width: 44px;
-      height: 44px;
-
-      &:hover {
-        background-color: $Colorfourth;
-        transition: background-color 0.7s ease-out;
-      }
-
-      &:hover .workers-list-links__svg {
-        fill: $Colorthird;
-      }
-    }
-
-    &__svg {
-      fill: #afb1b8;
-      &:hover {
-        fill: $Colorthird;
-      }
-    }
+    text-align: center;
+    @include text(16px, 400, normal, 0.48px);
   }
 }
 
-@media (max-width: 768px) {
-  .workers {
-    max-width: 768px;
-    padding: 60px 15px;
+.workers-list-links {
+  @extend %flex;
+  flex-wrap: nowrap;
+  width: 206px;
+  margin: 16px 32px 30px 32px;
+
+  @media (max-width: 1199px) {
+    margin: 16px 74px 24px 74px;
   }
 
-  .workers-title {
-    letter-spacing: 0.84px;
-    font-size: 28px;
-    margin-bottom: 30px;
+  @media (max-width: 767px)  {
+    margin: 16px 122px 24px 122px;
   }
 
-  .workers-list {
-    max-width: 768px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+  &__item {
+    border-radius: 50%;
 
-    &__item {
-      width: 354px;
+    &:hover {
+      background-color: $Colorfourth;
+      transition: background-color 0.7s ease-out;
+    }
+
+    &:hover .workers-list-links__svg {
+      fill: $Colorthird;
+      margin: 12px;
     }
   }
 
-  .workers-item__image {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-
-  .thumba {
-    width: 354px;
-    height: 374px;
-  }
-}
-
-@media (max-width: 480px) {
-  .workers-list__item {
-    width: 100%;
-  }
-
-  .thumba {
-    width: 450px;
-    height: 460px;
-  }
-
-  .workers-item__image {
-    width: 100%;
-    height: 100%;
+  &__svg {
+    fill: #afb1b8;
+    width: 20px;
+    height: 20px;
   }
 }

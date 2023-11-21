@@ -1,49 +1,61 @@
 .visually-hidden {
-    position: absolute !important;
-    clip: rect(1px 1px 1px 1px);
-    clip: rect(1px, 1px, 1px, 1px);
-    padding: 0 !important;
-    border: 0 !important;
-    height: 1px !important;
-    width: 1px !important;
-    overflow: hidden;
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
 
 use {
-    display: block;
+  display: block;
 }
 
 button {
-    display: block;
-    margin: 0;
-    padding: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 h2,
 p,
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: $Fontprimary;
-    font-style: normal;
+  font-family: $Fontprimary;
+  font-style: normal;
 }
 
 .container {
-    margin: 0 auto;
-    width: 1200px;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  @media (max-width: 1199px) {
+    max-width: 768px;
+  }
+
+  @media (max-width: 767px) {
+    max-width: 480px;
+  }
+
+  @media (max-width: 480px) {
+    min-width: 320px;
+  }
 }
 
 a {
-    display: block;
-    text-decoration: none;
+  display: block;
+  text-decoration: none;
 }
 
-
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 ul,
@@ -51,27 +63,15 @@ h1,
 h2,
 h3,
 p {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
-@media (max-width:768px) {
-    .container {
-        margin: 0 auto;
-        width: 100%;
-    }
+.outer-container {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  @media (max-width: 480px) {
+    min-width: 320px;
+  }
 }
-
-@media (max-width: 1200px) {
-    .container {
-        margin: 0 auto;
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        margin: 0 auto;
-        width: 100%;
-    }
-} 

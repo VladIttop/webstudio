@@ -1,18 +1,15 @@
+.work {
+  @media (max-width:1199px) {
+    display: none;
+  }
+}
+
 .work__title {
   @extend %flex;
   justify-content: center;
   @include text(36px, 700, 42px, 0.03em);
   margin-bottom: 50px;
   color: $Colorprimary;
-}
-
-@media (max-width: 768px) {
-
-  .work {
-    padding: 0;
-    margin: 0;
-    display: none
-  }
 }
 
 .figures {
